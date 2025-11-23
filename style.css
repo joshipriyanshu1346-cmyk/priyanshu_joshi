@@ -1,0 +1,214 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+
+    height: 100%;
+    width:100%;
+ 
+    background-color: black;
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.card {
+  padding: 1rem ;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  text-align: center;
+}
+.card h2{
+  color:red;
+  font-size:20px;
+}
+.card img{
+  height: 100px;
+  width: 100px;
+  border-radius: 30px;
+  background-position: cover;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title span {
+  position: relative;
+  padding: 0.5rem;
+  background-color: #10B981;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+}
+
+.title span svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  height: 1rem;
+}
+
+.title-text {
+  margin-left: 0.5rem;
+  color: #374151;
+  font-size: 18px;
+}
+
+.percent {
+  margin-left: 0.5rem;
+  color: #02972f;
+  font-weight: 600;
+  display: flex;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.data p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #1F2937;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  
+}
+
+.data .range {
+  position: relative;
+  background-color: #E5E7EB;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  /* padding:; */
+}
+
+.data .range .fill {
+  /* padding:20px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #10B981;
+  width: 0%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    /* overflow: hidden;
+    white-space: nowrap; */
+    
+}
+
+.tag {
+    background-color: #10B981;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* From Uiverse.io by niat786 */
+button {
+  margin-top: 20px;
+ border: none;
+ color: #fff;
+ background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+ border-radius: 20px;
+ background-size: 100% auto;
+ font-family: inherit;
+ font-size: 17px;
+ padding: 0.6em 2em;
+}
+
+button:hover {
+ background-position: right center;
+ background-size: 200% auto;
+ -webkit-animation: pulse 2s infinite;
+ animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+ 0% {
+  box-shadow: 0 0 0 0 #05bada66;
+ }
+
+ 70% {
+  box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+ }
+
+ 100% {
+  box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+ }
+}
+        .piano {
+            display: flex;
+            position: relative;
+            width: 700px;
+            height: 200px;
+            margin: 30px auto;
+            user-select: none;
+        }
+        .key {
+            border: 1px solid black;
+            border-radius: 0 0 5px 5px;
+            position: relative;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: black;
+        }
+        .white-key {
+            width: 60px;
+            height: 200px;
+            background: white;
+            z-index: 1;
+            margin-right: 2px;
+        }
+        .white-key:last-child {
+            margin-right: 0;
+        }
+        .black-key {
+            width: 40px;
+            height: 120px;
+            background: black;
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            margin-left: -20px;
+            border-radius: 0 0 3px 3px;
+            color: white;
+            font-size: 12px;
+            padding-bottom: 8px;
+        }
+         /* Position black keys relative to white keys  */
+        .black-c-key { left: 45px; }
+        .black-d-key { left: 107px; }
+        .black-f-key { left: 231px; }
+        .black-g-key { left: 293px; }
+        .black-a-key { left: 355px; }

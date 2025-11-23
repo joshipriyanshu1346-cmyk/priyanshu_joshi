@@ -1,0 +1,3 @@
+- [x] Edit INDEX.HTML to replace the #card div with a structured card including image, name, profession, paragraph, and tags.
+- [x] Update CSS for card elements (image, name, profession, paragraph).
+- [x] Test the card by opening INDEX.HTML in a browser.
